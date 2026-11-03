@@ -23,7 +23,7 @@ public class Product {
     @Column(nullable = false)
     private BigDecimal price;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "shelf_id")
     private Shelf shelf;
 
