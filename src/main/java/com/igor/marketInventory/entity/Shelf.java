@@ -17,7 +17,7 @@ public class Shelf {
     @OneToMany(mappedBy = "shelf",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Product> products = new ArrayList<>();
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name = "market_id")
     private Market market;
 
@@ -46,6 +46,10 @@ public class Shelf {
 
     public Market getMarket() {
         return market;
+    }
+
+    public void setMarket(Market market){
+        this.market = market;
     }
 
     //Constructor
