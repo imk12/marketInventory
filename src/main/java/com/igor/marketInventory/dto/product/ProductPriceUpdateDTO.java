@@ -1,4 +1,4 @@
-package com.igor.marketInventory.dto;
+package com.igor.marketInventory.dto.product;
 
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PositiveOrZero;

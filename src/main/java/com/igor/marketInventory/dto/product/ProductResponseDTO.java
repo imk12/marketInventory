@@ -1,4 +1,4 @@
-package com.igor.marketInventory.dto;
+package com.igor.marketInventory.dto.product;
 
 import java.math.BigDecimal;
 
