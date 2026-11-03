@@ -20,7 +20,7 @@ public class Product {
     @Column(nullable = false)
     private LocalDate expirationDate;
 
-    @Column(nullable = false)
+    @Column(nullable = false,precision = 8,scale = 2)
     private BigDecimal price;
 
     @ManyToOne(optional = false)
