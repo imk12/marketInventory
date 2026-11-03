@@ -23,6 +23,10 @@ public class Product {
     @Column(nullable = false)
     private BigDecimal price;
 
+    @ManyToOne
+    @JoinColumn(name = "shelf_id")
+    private Shelf shelf;
+
     protected Product() {}
 
     //Getter and Setter
@@ -57,6 +61,14 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public Shelf getShelf() {
+        return shelf;
+    }
+
+    public void setShelf(Shelf shelf) {
+        this.shelf = shelf;
     }
 
     public Product(String name,
